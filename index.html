@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuRi PaRtY!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            color: #FFF;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #FFDD00;
+            border-bottom: 5px solid pink;
+        }
+
+        .question {
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #00FFFF;
+            text-shadow: 0 0 10px indigo;
+            border: 2px solid #00FFFF;
+            text-align: center;
+        }
+
+        .answer {
+            display: none;
+            padding: 15px;
+            background-color: #000;
+            color: #FFF;
+            margin: 10px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            line-height: 1.6em;
+            border: 2px solid #00FFFF;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #FFDD00;
+            border-radius: 10px;
+            border: 5px solid pink;
+        }
+
+        a {
+            color: #00FF00;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #FF00FF;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        MuRi PaRtY!
+    </header>
+
+    <section>
+        <div class="question" onclick="toggleAnswer('answer1')">More About MuRi PaRtY</div>
+        <div id="answer1" class="answer">MuRi PaRtY is being held to celebrate the new Bangladesh and the fall of dictator Killer Hasina.</div>
+
+        <div class="question" onclick="toggleAnswer('answer2')">Location</div>
+        <div id="answer2" class="answer">Location: Rooftop of Owafa's House.</div>
+
+        <div class="question" onclick="toggleAnswer('answer3')">Host</div>
+        <div id="answer3" class="answer">Host: Owafa Al Afnan.</div>
+
+        <div class="question" onclick="toggleAnswer('answer4')">Participating Fee</div>
+        <div id="answer4" class="answer">Fee: 50 tk per person. Money will be collected on the appointed day.</div>
+
+        <div class="question" onclick="toggleAnswer('answer5')">Date & Time</div>
+        <div id="answer5" class="answer">Date & Time: Sunday, after 6 PM. Contact Owafa before coming.</div>
+
+        <div class="question" onclick="toggleAnswer('answer6')">Who Can Participate?</div>
+        <div id="answer6" class="answer">Anyone from the "Only Legend"s Messenger group can participate.</div>
+
+        <div class="question" onclick="toggleAnswer('answer7')">Contact to Participate</div>
+        <div id="answer7" class="answer">To participate, contact us via <a href="https://web.facebook.com/owafa.alafnan.3" target="_blank">Owafa's FB Profile</a>.</div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>For more information, reach out through <a href="https://web.facebook.com/owafa.alafnan.3" target="_blank">Owafa's FB Profile</a>.</p>
+    </section>
+
+    <script>
+        function toggleAnswer(answerId) {
+            var answer = document.getElementById(answerId);
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
